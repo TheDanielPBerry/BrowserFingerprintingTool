@@ -25,8 +25,8 @@ func main() {
 	// Configure CORS options
 	// Where ORIGIN_ALLOWED is like `scheme://dns[:port]`, or `*` (insecure)
 	headersOk := handlers.AllowedHeaders([]string{"Content-Type"})
-	originsOk := handlers.AllowedOrigins([]string{"danielberry.tech"})
-	methodsOk := handlers.AllowedMethods([]string{"GET", "POST", })
+	originsOk := handlers.AllowedOrigins([]string{"https://danielberry.tech"})
+	methodsOk := handlers.AllowedMethods([]string{"GET", "POST"})
 
 
 
